@@ -21,10 +21,10 @@ public class Samosa {
 	public String toString() {
 		return "Samosa [price=" + price + "]";
 	}
-	public void init() {
-		System.out.println("Inside init method");
+	public void hey() {
+		System.out.println("Inside init method:Hey how are you pal!!");
 	}
-	public void destroy() {
-		System.out.println("Inside  destroy method");
+	public void bye() {
+		System.out.println("Inside  destroy method:oh i am gonna die ohhh");
 	}
 }
