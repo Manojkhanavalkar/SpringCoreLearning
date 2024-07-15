@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:util="http://www.springframework.org/schema/util"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util.xsd"
+>
+
+<!--Stero configuration we have used here-->
+<context:component-scan base-package="com.springcore.stereotype"/>
+<!--We are not declaring bean here  -->
+<!-- Now we are creating stand alone collections here
+so that it can be used to give value in Student class here-->
+<!-- we are using util schema to create stand alone collection here-->
+<util:list list-class="java.util.ArrayList" id="tempAddress">
+	<value>Pune</value>
+	<value>Mumbai</value>
+	<value>Satara</value>
+</util:list>
+<!-- now here we are going to learn about the scope of bean-->
+<bean class="com.springcore.stereotype.Teacher" name="teacher" scope="prototype"/>
+</beans>

@@ -23,7 +23,7 @@ public class Ladoo {
 	public String toString() {
 		return "Ladoo [subject=" + subject + "]";
 	}
-	@PostConstruct
+	@PostConstruct //this is annotation for init method
 	public void start() {
 		System.out.println("Starting method:");
 	}

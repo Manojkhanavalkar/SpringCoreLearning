@@ -13,7 +13,7 @@ http://www.springframework.org/schema/context/spring-context.xsd"
 	<!-- 	<constructor-arg value="Java certificate" /> -->
 	
 </bean>
-<bean class="com.springcore.ci.Person" name="Person" c:name="Ram" c:personid="123" c:ref="certificate">
+<bean class="com.springcore.ci.Person" name="Person" c:name="Ram" c:personid="123" c:ref="certificate"><!-- here we have used a C schema -->
 	<!-- <constructor-arg value="Ram"/>
 	<constructor-arg value="123" />
 	<constructor-arg ref="certificate" />-->
