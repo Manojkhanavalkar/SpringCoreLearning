@@ -11,6 +11,9 @@ public class DemoMain {
 		Student student=context.getBean("temp",Student.class);
 		System.out.println(student);
 		student.study();
+		Samosa samosa=context.getBean("getSamosa",Samosa.class);
+		System.out.println("####### Calling display method seperatly using the bean of samosa #######");
+		samosa.display();
 
 	}
 
